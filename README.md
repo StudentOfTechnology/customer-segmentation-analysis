@@ -1,170 +1,85 @@
-\# Customer Segmentation & Sales Performance Analysis (SQL + Power BI)
+# Customer Segmentation & Sales Performance Analysis (SQL + Power BI)
 
-
-
-\## Overview
-
+## Overview
 This project analyzes customer purchasing behavior to identify high-value customers, evaluate profitability, and understand the impact of discounts on business performance.
 
+The goal is to move beyond raw data and provide actionable insights that support better pricing, targeting, and customer strategy decisions.
 
+---
 
-The goal is to move beyond raw data and provide actionable insights that can support better pricing, targeting, and customer strategy decisions.
+## Tools Used
+- PostgreSQL
+- SQL (CTEs, CASE statements, aggregations)
+- Power BI (data modeling, DAX, visualization)
 
+---
 
+## Data Preparation
 
-\---
-
-
-
-\## Tools Used
-
-\- PostgreSQL
-
-\- SQL (CTEs, CASE statements, aggregations)
-
-\- Power BI (data modeling, DAX, visualization)
-
-
-
-\---
-
-
-
-\## Data Preparation
-
-
-
-A SQL view (`customer\_analysis`) was created to transform transactional data into customer-level insights.
-
-
+A SQL view (`customer_analysis`) was created to transform transactional data into customer-level insights.
 
 Key transformations include:
-
-\- Aggregating total sales, profit, quantity, and average discount per customer
-
-\- Segmenting customers into:
-
-&#x20; - High Value
-
-&#x20; - Medium Value
-
-&#x20; - Low Value
-
-\- Classifying customers as:
-
-&#x20; - Profitable
-
-&#x20; - Unprofitable
-
-
+- Aggregating total sales, profit, quantity, and average discount per customer
+- Segmenting customers into:
+  - High Value
+  - Medium Value
+  - Low Value
+- Classifying customers as:
+  - Profitable
+  - Unprofitable
 
 This structured dataset enables efficient analysis and dashboard reporting.
 
+---
 
-
-\---
-
-
-
-\## Dashboard Features
-
-
+## Dashboard Features
 
 The Power BI dashboard provides a comprehensive view of customer performance:
 
+- **KPI Metrics**
+  - Total Customers
+  - Total Sales
+  - Total Profit
 
+- **Customer Segmentation**
+  - Distribution of customers by value tier
 
-\- \*\*KPI Metrics\*\*
+- **Top Customers Analysis**
+  - Top 10 customers by sales
+  - Top 10 customers by profit
 
-&#x20; - Total Customers
+- **Profitability Insights**
+  - Breakdown of profitable vs unprofitable customers
 
-&#x20; - Total Sales
+- **Discount vs Profit Analysis**
+  - Visual exploration of how discounting impacts profitability
 
-&#x20; - Total Profit
+---
 
+## Key Insights
 
+- A small group of high-value customers contributes a disproportionate share of revenue
+- Discounting does not consistently improve profitability and may reduce margins
+- Customer profitability varies significantly, highlighting opportunities for better targeting
+- Some customers generate sales but contribute little or negative profit
 
-\- \*\*Customer Segmentation\*\*
+---
 
-&#x20; - Distribution of customers by value tier
+## Project Structure
 
-
-
-\- \*\*Top Customers Analysis\*\*
-
-&#x20; - Top 10 customers by sales
-
-&#x20; - Top 10 customers by profit
-
-
-
-\- \*\*Profitability Insights\*\*
-
-&#x20; - Breakdown of profitable vs unprofitable customers
-
-
-
-\- \*\*Discount vs Profit Analysis\*\*
-
-&#x20; - Visual exploration of how discounting impacts profitability
-
-
-
-\---
-
-
-
-\## Key Insights
-
-
-
-\- A small group of high-value customers contributes a disproportionate share of revenue
-
-\- Discounting does not consistently improve profitability and may reduce margins
-
-\- Customer profitability varies significantly, highlighting opportunities for better targeting
-
-\- Some customers generate sales but contribute little or negative profit
-
-
-
-\---
-
-
-
-\## Project Structure
-
-
-
+```text
 data/
-
 sql/
-
 powerbi/
-
 screenshots/
-
 README.md
 
+--
 
+### SQL View
+![SQL View](screenshots/01_customer_analysis_view.png)
 
-\---
+--
 
-
-
-\## Screenshots
-
-
-
-\### SQL View
-
-!\[SQL View](screenshots/01\_customer\_analysis\_view.png)
-
-
-
-\### Dashboard
-
-!\[Dashboard](screenshots/02\_customer\_dashboard.png)
-
-
-
+### Dashboard
+![Dashboard](screenshots/02_customer_dashboard.png)
