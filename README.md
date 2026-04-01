@@ -76,7 +76,9 @@ README.md
 --
 
 SQL View
+
 ![SQL View](screenshots/01_customer_analysis_view.png)
 
 Dashboard
+
 ![Dashboard](screenshots/02_customer_dashboard.png)
