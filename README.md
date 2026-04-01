@@ -67,7 +67,6 @@ The Power BI dashboard provides a comprehensive view of customer performance:
 
 ## Project Structure
 
-```text
 data/
 sql/
 powerbi/
